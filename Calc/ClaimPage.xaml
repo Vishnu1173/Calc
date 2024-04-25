@@ -1,0 +1,39 @@
+﻿<Page x:Class="Calc.ClaimPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Calc"
+      mc:Ignorable="d" 
+      d:DesignHeight="420" d:DesignWidth="610"
+      Title="ClaimPage" Background = "LightCyan">
+
+    <Grid Margin="35">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="30"   ></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="70"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Label Content=" Claim Submission " FontSize="20"  FontStyle="Italic" HorizontalAlignment="Center"></Label>
+        <TextBox Text="Medical insurance claim Submission is one of" BorderBrush="White" Grid.Row="1" Grid.Column="0" FontSize="20" Padding="1" Height="30" ></TextBox>
+        <TextBox Text="the key steps in the medical billing process. It" BorderBrush="White" Grid.Row="2" Grid.Column="0" FontSize="20" Padding="1" Height="30" ></TextBox>
+        <TextBox Text="determines the amount of reimbursement that" BorderBrush="White" Grid.Row="3" Grid.Column="0" FontSize="20" Padding="1" Height="30" ></TextBox>
+        <TextBox Text="the healthcare provider will receive after the" BorderBrush="White" Grid.Row="4" Grid.Column="0" FontSize="20" Padding="1" Height="30" ></TextBox>
+        <TextBox Text="insurance company clears the dues." BorderBrush="White" Grid.Row="5" Grid.Column="0" FontSize="20" Padding="1" Height="30" ></TextBox>
+        <TextBox x:Name="txtdetails" Background="White" AcceptsReturn="True" BorderBrush="White" Grid.Row="6" Grid.Column="0" FontSize="20" Padding="1">
+            <TextBox.ContextMenu>
+                <ContextMenu>
+                    <MenuItem Header="New" Click="MenuItem_Click"></MenuItem>
+                    <MenuItem Header="cut" Command="Cut"></MenuItem>
+                    <MenuItem Header="copy value" Command="Copy"></MenuItem>
+                    <MenuItem Header="paste value" Command="Paste"></MenuItem>
+                </ContextMenu>
+            </TextBox.ContextMenu>
+        </TextBox>
+    </Grid>
+</Page>

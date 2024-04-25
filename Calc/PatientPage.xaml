@@ -1,0 +1,29 @@
+﻿<Page x:Class="Calc.PatientPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Calc"
+      mc:Ignorable="d" 
+      d:DesignHeight="420" d:DesignWidth="610"
+      Title="PatientPage" Background = "LightGreen">
+
+    <Grid Margin="35">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="30"   ></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Label Content="Authorization In Medical Billing" FontSize="20"  FontStyle="Italic" HorizontalAlignment="Center"></Label>
+        <TextBox Text="Prior authorization means that a health provider" BorderBrush="White" Grid.Row="1" Grid.Column="0" FontSize="20" Padding="1" Height="30" ></TextBox>
+        <TextBox Text="needs to get approval from a patient's health" BorderBrush="White" Grid.Row="2" Grid.Column="0" FontSize="20" Padding="1" Height="30" ></TextBox>
+        <TextBox Text="plan before moving ahead with a treatment," BorderBrush="White" Grid.Row="3" Grid.Column="0" FontSize="20" Padding="1" Height="30" ></TextBox>
+        <TextBox Text="procedure, or medication. Different health plans" BorderBrush="White" Grid.Row="4" Grid.Column="0" FontSize="20" Padding="1" Height="30" ></TextBox>
+        <TextBox Text="have different rules for when prior authorization" BorderBrush="White" Grid.Row="5" Grid.Column="0" FontSize="20" Padding="1" Height="30" ></TextBox>
+        <TextBox Text="is required." BorderBrush="White" Grid.Row="6" Grid.Column="0" FontSize="20" Padding="1" Height="30" ></TextBox>
+    </Grid>
+</Page>
